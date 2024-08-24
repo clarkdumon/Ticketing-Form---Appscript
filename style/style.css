@@ -1,0 +1,136 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+  :root {
+    /*? Colors
+		      ============================= */
+
+    --bnb-color: #ff5a60;
+
+    --white-color: #f6f5ff;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+
+    /*? Transitions
+		      ============================= */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+
+    /*? Box Shadow */
+    --box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    --box-shadow-hover: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+      0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white-color);
+  }
+
+  .form-container {
+    width: 500px;
+    padding: 30px;
+    background: var(--bnb-color);
+    border-radius: 10px;
+  }
+
+  #userName {
+    text-transform: capitalize;
+  }
+
+  h3,
+  h5 {
+    margin-bottom: 10px;
+    color: var(--white-color);
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  #form_submit {
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  #form_submit2 {
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  #submit:hover {
+    background: #333333;
+    color: white;
+  }
+
+  #toast-box {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .toast {
+    width: 250px;
+    height: 40px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+    margin: 10px 0;
+
+  }
+
+  .toast.success {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding-left: 10px;
+    color: var(--success-color);
+    border-left: solid 5px var(--success-color);
+    /* background: var(--succes-color); */
+  }
+
+  .toast p {
+    padding-left: 10px;
+  }
+
+  .toast.error {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding-left: 10px;
+    color: var(--danger-color);
+    border-left: solid 5px var(--danger-color);
+    /* background: var(--succes-color); */
+  }
+</style>
